@@ -1,0 +1,340 @@
+@import config
+
+// CUSTOM USER STYLES & IMPORTS
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6
+  font-weight: bold
+  margin-bottom: 0
+
+
+.text-dark
+  color: #000000 !important
+
+.text-orange
+  color: #F69B33
+
+.text-white
+  color: white
+
+.fs13
+  font-size: 13px
+
+.fs16
+  font-size: 16px
+
+.fs18
+  font-size: 18px
+
+.fs24
+  font-size: 24px
+
+.fs36
+  font-size: 36px
+
+.fs48
+  font-size: 48px
+//Главная страница
+body
+  ul
+    margin: 0
+    padding: 0
+  a
+    transition: color .1s ease
+    text-decoration: none
+    &:hover
+      text-decoration: none
+      color: $accent!important
+  .btn-orange
+    background-color: #F69B33
+    font-size: 24px
+    font-weight: bold
+    color: white
+    &:hover
+      background-color: #f5880c
+      color: white
+  input
+    font-size: 24px
+    font-weight: bold
+    border: 1px solid #F69B33
+    background: #FFFFFF
+    &::placeholder
+      color: #000000
+      font-size: 24px
+      font-weight: bold
+      padding-left: 22px
+  textarea
+    font-size: 24px
+    font-weight: bold
+    border: 1px solid #F69B33
+    &::placeholder
+      color: #000000
+      font-size: 24px
+      font-weight: bold
+      padding: 27px 0 0 22px
+//Шапка
+header
+  ul
+    li
+      a
+        &:active
+          text-decoration: none
+          font-weight: bold
+          color: #000000
+  .header-phone
+    img
+      width: 20px
+
+.banner
+  .right-side
+    background-image: url("../img/dest/leftside1.png")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    height: 412px
+    img
+      margin-left: 23px
+      width: 26px!important
+    .right-side-element
+      &:nth-child(1)
+        padding: 39px 18px 0 0
+      &:nth-child(2)
+        padding: 25px 18px 0 0
+      &:nth-child(3)
+        padding: 25px 18px 0 0
+      &:nth-child(4)
+        padding: 25px 18px 0 0
+      &:nth-child(5)
+        padding: 25px 18px 0 0
+      &:nth-child(6)
+        padding: 25px 18px 0 0
+      &:nth-child(7)
+        padding: 25px 18px 0 0
+  .up-button-text
+    margin-top: 96px
+    width: 450px
+  .btn-orange
+    width: 400px
+    height: 80px
+    background-color: #F69B33
+    font-size: 24px
+    color: white
+    font-weight: bold
+    margin-bottom: 44px
+
+//Страница Контакты
+.contacts
+  background-image: url("../img/dest/contacts-bg.png")
+  background-position: center
+  background-repeat: no-repeat
+  .contacts-left
+    margin-right: 25px
+    .cont-email
+      background-color: white
+      width: 505px
+      height: 180px
+      .cont-img
+        background-color: #F69B33
+        width: 25px
+        height: 25px
+        img
+          width: 15px
+  .contacts-right
+    background-color: black
+    width: 711px
+    height: 484px
+    padding: 0 20px
+    .cont-form-fields
+      .cont-name-tel
+        input
+          width: 320px
+          height: 84px
+          border: 1px solid #F69B33
+          background: #FFFFFF
+          &::placeholder
+            color: #000000
+            font-size: 24px
+            font-weight: bold
+            padding-left: 22px
+      .cont-comment
+        textarea
+          resize: none
+          border: 1px solid #F69B33
+          &::placeholder
+            color: #000000
+            font-size: 24px
+            font-weight: bold
+            padding: 27px 0 0 22px
+      .cont-button
+        .btn-orange
+          width: 295px
+          height: 84px
+          border: 1px solid #F69B33
+//стили контента на страницах услуг
+.gt-rate
+  .gt-rate-tabs
+    .rate-tabs
+      width: 295px
+      height: 330px
+      margin: 0 10px
+      padding: 0 20px
+      .rate-title
+        margin-top: 35px
+  .rate-title-price
+    border-top: 1px solid black
+  .rate-button
+    .btn-orange
+      margin: 30px 10px 0 10px
+      width: 295px
+      height: 84px
+//Страница такси для гостей
+.guest-taxi
+  background-image: url("../img/dest/guest-taxi-bg.png")
+  background-position: center
+  background-repeat: no-repeat
+
+// Страница такси для местных
+.local-taxi
+  background-image: url("../img/dest/taxi-local-bg.png")
+  background-position: center
+  background-repeat: no-repeat
+// Страница такси по области
+.area-taxi
+  background-image: url("../img/dest/taxi-area-bg.png")
+  background-position: center
+  background-repeat: no-repeat
+//Страница трезвый водитель
+.sober-driver
+  background-image: url("../img/dest/sober-driver-bg.png")
+  background-position: center
+  background-repeat: no-repeat
+  .sober-right
+    background-color: white
+    height: 330px
+    .zakaz-taxi-form
+      width: 320px
+      height: 84px
+    .zakaz-taxi-checkbox
+      width: 22px
+      height: 22px
+  .btn-orange
+    width: 295px
+    height: 84px
+// Услуги
+.uslugi
+  .tabs
+    .uslugi-tabs
+      background-position: center
+      background-repeat: no-repeat
+      padding: 0 40px
+      &:nth-child(1)
+        background-image: url("../img/dest/uslugi-tabs-guest.png")
+      &:nth-child(2)
+        background-image: url("../img/dest/uslugi-tabs-nn.png")
+      &:nth-child(3)
+        background-image: url("../img/dest/uslugi-tabs-rus.png")
+      &:nth-child(4)
+        background-image: url("../img/dest/uslugi-tabs-sober.png")
+      .tabs-title
+        margin-top: 46px
+      .tabs-text
+        margin-top: 38px
+        border-top: 0.5px white solid
+        padding-top: 20px
+
+//заказ
+.zakaz-taxi
+  .zakaz-taxi-form
+    width: 260px
+    height: 84px
+    border: 1px #F69B33 solid
+    margin: 30px 10px 0 10px
+    font-size: 24px
+    font-weight: bold
+    padding-left: 22px
+    &::placeholder
+      color: black
+  .btn-orange
+    margin: 30px 10px 0 10px
+    width: 260px
+    height: 84px
+  .zakaz-taxi-checkbox
+    width: 22px
+    height: 22px
+    margin: 34px 0 0 10px
+    background: white
+  .checkbox-text
+    margin: 30px 0 0 13px
+//Почему мы
+.why-us
+  .why-us-tabs-section
+    margin-top: 55px
+//Тарифы
+.rate
+  background-image: url("../img/dest/rate-background.png")
+  background-position: center
+  background-repeat: no-repeat
+  .rate-block
+    .rate-tabs-section
+      margin-top: 40px
+      .rate-tabs
+        width: 265px
+        height: 330px
+        padding: 0 8px
+        .rate-title
+          padding-top: 39px
+        .rate-small-price
+          padding-top: 15px
+        .rate-title-price
+          padding-top: 20px
+          border-top: 1px #000000 solid
+      .rate-button
+        .btn-orange
+          margin-top: 30px
+          width: 265px
+          height: 84px
+
+//Мы первые
+.first-content
+  margin-top: 52px
+  .first-content-text
+    margin-right: 20px
+
+//Мы не только такси
+.not-taxi
+  .not-taxi-content
+    margin-top: 30px
+  .not-taxi-text
+    margin-left: 30px
+//Свяжитесь с нами
+.contact-us
+  .contact-form
+    background-image: url("../img/dest/contact-us-bg.png")
+    background-position: center
+    background-repeat: no-repeat
+    height: 327px
+    .contact-form-fields
+      .contact-name-tel
+        input
+          width: 400px
+          height: 84px
+      .contact-comment
+        textarea
+          resize: none
+          margin-left: 20px
+      .contact-button
+        margin-bottom: 40px
+        .btn-orange
+          margin-left: 20px
+          width: 270px
+          height: 84px
+        .contact-button-policity
+          margin: 10px 0 0 20px
+          padding: 0 5px
+// Подвал
+footer
+  background-color: black
+  .footer-info
+    .footer-logo
+      background-color: white
+      width: 238px
+      height: 132px
+
