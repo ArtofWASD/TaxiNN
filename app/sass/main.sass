@@ -32,6 +32,8 @@
 
 .fs48
   font-size: 48px
+.lh1
+  line-height: 1.1
 //Главная страница
 body
   ul
@@ -72,13 +74,24 @@ body
       padding: 27px 0 0 22px
 //Шапка
 header
-  ul
-    li
-      a
-        &:active
-          text-decoration: none
-          font-weight: bold
-          color: #000000
+  .links
+    a
+      &:active, &:focus
+        text-decoration: none
+        font-weight: bold
+        color: #000000
+      &:hover
+        color: $accent!important
+    .links-uslugi
+      position: relative
+      &:hover
+        display: inline
+      .links-submenu
+        position: absolute
+
+
+
+
   .header-phone
     img
       width: 20px
