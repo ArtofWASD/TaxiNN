@@ -23,13 +23,15 @@
 			<!-- Ссылки(ПК) -->
 			<ul class="links list-unstyled d-flex">
 				<li><a href="#" class="text-dark p-2 p-xl-3 fs18">Главная</a></li>
-				<li><a href="#" class="links-uslugi text-dark p-2 p-xl-3 fs18">Услуги</a></li>
-					<ul class="links-submenu list-unstyled mt-3">
+				<li class="links-topmenu position-relative">
+					<a href="#" class="text-dark p-2 p-xl-3 fs18">Услуги</a>
+					<ul class="links-submenu list-unstyled mt-3 d-none position-absolute bg-white border p-3">
 						<li><a href="#">Такси для гостей города</a></li>
 						<li><a href="#">Такси области и РФ</a></li>
 						<li><a href="#">Такси для нижегородцев</a></li>
 						<li><a href="#">Трезвый водитель</a></li>
 					</ul>
+				</li>
 				<li><a href="#" class="text-dark p-2 p-xl-3 fs18">Контакты</a></li>
 			</ul>
 			<!-- Телефон -->
@@ -43,40 +45,40 @@
 	<!-- Баннер. Начало. -->
 	<section class="banner py-5 bg-light">
         <div class="container">
-            <div class="d-flex justify-content-between align-items-center">
+            <div class=" row justify-content-between align-items-center">
 				<!-- Заказать такси -->
-                <div class="left-side">
+                <div class="left-side col-lg-6">
 					<div class="right-side-text">
 						<h2 class="text-dark fs48 ">Двигайся <span class="text-orange fs48">с комфортом</span></h2>
 						<h3 class="tex-dark fs24">Машины Премиум класса по цене Эконом</h3>
 					</div>
 					<div class="button-section">
-						<h3 class="up-button-text text-dark fs18 font-weight-normal">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</h3>
+						<p class="up-button-text text-dark fs18 font-weight-normal">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
 						<button class="btn btn-orange mt-4">Заказать такси сейчас</button>
 					</div>
                 </div>
 				<!-- Услуги -->
-                <div class="right-side text-right justify-content-end align-items-center" >
+                <div class="right-side text-right justify-content-end align-items-center col-lg-6" >
 					<div class="right-side-element align-items-center">
-						<h4 class="text-white fs18">Предварительный заказ <img src="img/dest/phone-white.png" alt=""></h4>
+						<h4 class="text-white fs18">Предварительный заказ <img src="img/phone-icon-white.svg" alt=""></h4>
 					</div>
 					<div class="right-side-element">
-						<h4 class="text-white fs18">Безналичная оплата <img src="img/dest/payment-icon.png" alt=""></h4>
+						<h4 class="text-white fs18">Безналичная оплата <img src="img/card-icon.svg" alt=""></h4>
 					</div>
 					<div class="right-side-element">
-						<h4 class="text-white fs18">Межгород <img src="img/dest/map-icon.png" alt=""></h4>
+						<h4 class="text-white fs18">Межгород <img src="img/map-icon.svg" alt=""></h4>
 					</div>
 					<div class="right-side-element">
-						<h4 class="text-white fs18">Подача 3 мин <img src="img/dest/time-icon.png" alt=""></h4>
+						<h4 class="text-white fs18">Подача 3 мин <img src="img/time-icon.svg" alt=""></h4>
 					</div>
 					<div class="right-side-element">
-						<h4 class="text-white fs18">Встретим у вокзала/аэропорта <img src="img/dest/meettime-icon.png" alt=""></h4>
+						<h4 class="text-white fs18">Встретим у вокзала/аэропорта <img src="img/timer-icon.svg" alt=""></h4>
 					</div>
 					<div class="right-side-element">
-						<h4 class="text-white fs18">Возим детей <img src="img/dest/children-icon.png" alt=""></h4>
+						<h4 class="text-white fs18">Возим детей <img src="img/children-icon.svg" alt=""></h4>
 					</div>
 					<div class="right-side-element">
-						<h4 class="text-white fs18">Трезвый водитель <img src="img/dest/sober-icon.png" alt=""></h4>
+						<h4 class="text-white fs18">Трезвый водитель <img src="img/sober-icon.svg" alt=""></h4>
 					</div>
                 </div>
             </div>
@@ -89,27 +91,35 @@
 			<div class="uslugi-title">
 				<h2 class="text-dark fs48 font-weight-bold ">Наши<span class="text-orange fs48"> услуги</span></h2>
 			</div>
-			<div class="tabs d-flex justify-content-center align-items-center">
-				<div class="mx-1">
-					<div class="uslugi-tabs-1 text-center my-2">
-						<h3 class="tabs-title text-white fs36">Такси для гостей города</h3>
-						<h3 class="tabs-text text-white fs18 font-weight-normal">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</h3>
+			<div class="row mt-4">
+				<article class="col-lg-6">
+					<div class="uslugi-item bg-light py-5 px-4 text-center" style="background-image: url('/img/dest/uslugi-tabs-guest.png')">
+						<h1 class="tabs-title text-white fs36">Такси для гостей города</h1>
+						<hr class="border-white my-4">
+						<p class="tabs-text text-white fs18 font-weight-normal mb-0">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
 					</div>
-					<div class="uslugi-tabs-2 text-center my-2">
-						<h3 class="tabs-title text-white fs36">Такси для нижегородцев</h3>
-						<h3 class="tabs-text text-white fs18 font-weight-normal">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</h3>
+				</article>
+				<article class="col-lg-6">
+					<div class="uslugi-item bg-light py-5 px-4 text-center" style="background-image: url('/img/dest/uslugi-tabs-nn.png')">
+						<h1 class="tabs-title text-white fs36">Такси для новгородцев</h1>
+						<hr class="border-white my-4">
+						<p class="tabs-text text-white fs18 font-weight-normal mb-0">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
 					</div>
-				</div>
-				<div class="mx-1">
-					<div class="uslugi-tabs-3 text-center my-2">
-						<h3 class="tabs-title text-white fs36 ">Такси по области и РФ</h3>
-						<h3 class="tabs-text text-white fs18 font-weight-normal">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</h3>
+				</article>
+				<article class="col-lg-6 mt-4">
+					<div class="uslugi-item bg-light py-5 px-4 text-center" style="background-image: url('/img/dest/uslugi-tabs-rus.png')">
+						<h1 class="tabs-title text-white fs36">Такси по области и РФ</h1>
+						<hr class="border-white my-4">
+						<p class="tabs-text text-white fs18 font-weight-normal mb-0">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
 					</div>
-					<div class="uslugi-tabs-4 text-center my-2">
-						<h3 class="tabs-title text-white fs36">Услуга "трезвый водитель"</h3>
-						<h3 class="tabs-text text-white fs18 font-weight-normal">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</h3>
+				</article>
+				<article class="col-lg-6 mt-4">
+					<div class="uslugi-item bg-light py-5 px-4 text-center" style="background-image: url('/img/dest/uslugi-tabs-sober.png')">
+						<h1 class="tabs-title text-white fs36">Услуга "трезвый водитель"</h1>
+						<hr class="border-white my-4">
+						<p class="tabs-text text-white fs18 font-weight-normal mb-0">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
 					</div>
-				</div>
+				</article>
 			</div>
 		</div>
 	</section>
@@ -149,25 +159,25 @@
 			<div class="why-us-tabs-section row d-flex justify-content-center align-items-center col-lg-12">
 				<div class="why-us-tabs col-lg-3">
 					<div class="d-flex justify-content-center">
-						<img src="img/dest/why-icon-car.png" alt="">
+						<img src="img/why-car-icon.svg" alt="">
 					</div>
 					<h3 class="fs24 text-center font-weight-normal">Автомобили Премиум класса</h3>
 				</div>
 				<div class="why-us-tabs col-lg-3">
 					<div class="d-flex justify-content-center">
-						<img src="img/dest/why-icon-lowprice.png" alt="">
+						<img src="img/why-lowprice-icon.svg" alt="">
 					</div>
 					<h3 class="fs24 text-center font-weight-normal">Цены от 50 Р по городу</h3>
 				</div>
 				<div class="why-us-tabs col-lg-3">
 					<div class="d-flex justify-content-center">
-						<img src="img/dest/why-icon-time.png" alt="">
+						<img src="img/why-time-icon.svg" alt="">
 					</div>
 					<h3 class="fs24 text-center font-weight-normal">Всегда <br> вовремя</h3>
 				</div>
 				<div class="why-us-tabs col-lg-3">
 					<div class="d-flex justify-content-center">
-						<img src="img/dest/why-icon-license.png" alt="">
+						<img src="img/why-license-icon.svg" alt="">
 					</div>
 					<h3 class="fs24 text-center font-weight-normal">Работаем по лицензии</h3>
 				</div>
@@ -181,75 +191,64 @@
 			<div class="rate-title">
 				<h2 class="text-white fs48 font-weight-bold">Наши <span class="text-orange fs48 font-weight-bold">тарифы</span></h2>
 			</div>
-			<div class="rate-block d-flex justify-content-between align-items-center">
+			<div class="rate-block d-flex justify-content-between align-items-center mt-4">
 				<div class="rate-tabs-section">
 					<div class="rate-tabs bg-white">
-						<h3 class="rate-title text-dark text-center fs24">Эконом</h3>
-						<h3 class="rate-subtitle text-dark text-center fs18 font-weight-normal mt-1">Автомобили Эконом класса</h3>
-						<div class="rate-small-price">
-							<h3 class="text-dark text-center fs18 pt-4 font-weight-normal">50р посадка</h3>
-							<h3 class="text-dark text-center fs18 my-2 font-weight-normal">45р километр</h3>
-							<h3 class="text-dark text-center fs18 my-2  pb-3 font-weight-normal">25р минута пути</h3>
-						</div>
-						<div class="rate-title-price">
-							<h3 class="text-dark text-center fs36"> от 50Р </h3>
-						</div>
+						<h3 class="rate-title text-dark text-center fs24 font-weight-bold pt-4">Эконом</h3>
+						<p class="rate-subtitle text-dark text-center fs18 mt-2 mb-5">Автомобили Эконом класса</p>
+						<p class="text-dark text-center fs18 mb-0 mt-4">50р посадка</p>
+						<p class="text-dark text-center fs18 mb-0">45р километр</p>
+						<p class="text-dark text-center fs18">25р минута пути</p>
+						<hr class="mx-4 mb-1">
+						<p class="text-dark text-center fs36 font-weight-bold pb-4"> от 50Р </p>
 					</div>
 					<div class="rate-button">
-						<button class="btn btn-orange">Заказать</button>
+						<button class="btn btn-orange mt-3">Заказать</button>
 					</div>
 				</div>
 				<div class="rate-tabs-section">
 					<div class="rate-tabs bg-white">
-						<h3 class="rate-title text-dark text-center fs24">Комфорт</h3>
-						<h3 class="rate-subtitle text-dark text-center fs18 font-weight-normal mt-1">Автомобили Комфорт класса</h3>
-						<div class="rate-small-price">
-							<h3 class="text-dark text-center fs18 pt-4 font-weight-normal">89р посадка</h3>
-							<h3 class="text-dark text-center fs18 my-2 font-weight-normal">60р километр</h3>
-							<h3 class="text-dark text-center fs18 my-2  pb-3 font-weight-normal">40р минута пути</h3>
-						</div>
-						<div class="rate-title-price">
-							<h3 class="text-dark text-center fs36"> от 89Р </h3>
-						</div>
+						<h3 class="rate-title text-dark text-center fs24 font-weight-bold pt-4">Комфорт</h3>
+						<p class="rate-subtitle text-dark text-center fs18 mt-2 mb-5">Автомобили Комфорт класса</p>
+						<p class="text-dark text-center fs18 mb-0 mt-4">89р посадка</p>
+						<p class="text-dark text-center fs18 mb-0">60р километр</p>
+						<p class="text-dark text-center fs18">40р минута пути</p>
+						<hr class="mx-4 mb-1">
+						<p class="text-dark text-center fs36 font-weight-bold pb-4">от 89Р</p>
 					</div>
 					<div class="rate-button">
-						<button class="btn btn-orange">Заказать</button>
+						<button class="btn btn-orange mt-3">Заказать</button>
 					</div>
 				</div>
 				<div class="rate-tabs-section">
 					<div class="rate-tabs bg-white">
-						<h3 class="rate-title text-dark text-center fs24">Бизнес</h3>
-						<h3 class="rate-subtitle text-dark text-center fs18 font-weight-normal mt-1">Автомобили Бизнес класса</h3>
-						<div class="rate-small-price">
-							<h3 class="text-dark text-center fs18 pt-4 font-weight-normal">199р посадка</h3>
-							<h3 class="text-dark text-center fs18 my-2 font-weight-normal">70р километр</h3>
-							<h3 class="text-dark text-center fs18 my-2  pb-3 font-weight-normal">50р минута пути</h3>
-						</div>
-						<div class="rate-title-price">
-							<h3 class="text-dark text-center fs36"> от 199Р </h3>
-						</div>
+						<h3 class="rate-title text-dark text-center fs24 font-weight-bold pt-4">Бизнес</h3>
+						<p class="rate-subtitle text-dark text-center fs18 mt-2 mb-5">Автомобили Бизнес класса</p>
+						<p class="text-dark text-center fs18 mb-0 mt-4">199р посадка</p>
+						<p class="text-dark text-center fs18 mb-0">70р километр</p>
+						<p class="text-dark text-center fs18">50р минута пути</p>
+						<hr class="mx-4 mb-1">
+						<p class="text-dark text-center fs36 font-weight-bold pb-4"> от 50Р </p>
 					</div>
 					<div class="rate-button">
-						<button class="btn btn-orange">Заказать</button>
+						<button class="btn btn-orange mt-3">Заказать</button>
 					</div>
 				</div>
 				<div class="rate-tabs-section">
 					<div class="rate-tabs bg-white">
-						<h3 class="rate-title text-dark text-center fs24">Трезвый водитель</h3>
-						<h3 class="rate-subtitle text-dark text-center fs18 font-weight-normal mt-1">Заберем из любой точки</h3>
-						<div class="rate-small-price">
-							<h3 class="text-dark text-center fs18 pt-4 font-weight-normal">500р подача</h3>
-							<h3 class="text-dark text-center fs18 my-2 font-weight-normal">90р километр</h3>
-							<h3 class="text-dark text-center fs18 my-2  pb-3 font-weight-normal">90р минута пути</h3>
-						</div>
-						<div class="rate-title-price">
-							<h3 class="text-dark text-center fs36"> от 500Р </h3>
-						</div>
+						<h3 class="rate-title text-dark text-center fs24 font-weight-bold pt-4">Трезвый водитель</h3>
+						<p class="rate-subtitle text-dark text-center fs18 mt-2 mb-5">Заберём из любой точки</p>
+						<p class="text-dark text-center fs18 mb-0 mt-4">500р посадка</p>
+						<p class="text-dark text-center fs18 mb-0">90р километр</p>
+						<p class="text-dark text-center fs18">90р минута пути</p>
+						<hr class="mx-4 mb-1">
+						<p class="text-dark text-center fs36 font-weight-bold pb-4"> от 500Р </p>
 					</div>
 					<div class="rate-button">
-						<button class="btn btn-orange">Заказать</button>
+						<button class="btn btn-orange mt-3">Заказать</button>
 					</div>
 				</div>
+
 			</div>
 		</div>
 	</section>
@@ -372,9 +371,9 @@
 					</ul>
 				</div>
 				<div class="footer-social mt-3">
-                    <img src="img/dest/footer-icon-vk.png" alt="">
-                    <img src="img/dest/footer-icon-inst.png" alt="">
-                    <img src="img/dest/footer-icon-fb.png" alt="">
+                    <img src="img/vk-footer-icon.svg" alt="">
+                    <img src="img/inst-footer-icon.svg" alt="">
+                    <img src="img/fb-footer-icon.svg" alt="">
 				</div>
 			</div>
 			<div class="footer-copyright d-flex justify-content-between align-items-center">

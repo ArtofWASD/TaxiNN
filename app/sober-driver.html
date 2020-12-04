@@ -23,17 +23,21 @@
             <!-- Ссылки(ПК) -->
             <ul class="links list-unstyled d-flex">
                 <li><a href="#" class="text-dark p-2 p-xl-3 fs18">Главная</a></li>
-                <li><a href="#" class="text-dark p-2 p-xl-3 fs18">Услуги</a></li>
+                <li class="links-topmenu position-relative">
+                    <a href="#" class="text-dark p-2 p-xl-3 fs18">Услуги</a>
+                    <ul class="links-submenu list-unstyled mt-3 d-none position-absolute bg-white border p-3">
+                        <li><a href="#">Такси для гостей города</a></li>
+                        <li><a href="#">Такси области и РФ</a></li>
+                        <li><a href="#">Такси для нижегородцев</a></li>
+                        <li><a href="#">Трезвый водитель</a></li>
+                    </ul>
+                </li>
                 <li><a href="#" class="text-dark p-2 p-xl-3 fs18">Контакты</a></li>
             </ul>
             <!-- Телефон -->
-            <div class="phone d-inline">
-                <div class="header-phone d-flex justify-content-end align-items-center">
-                    <img src="img/dest/phone-icon.png" alt="" class="mx-1"> <a href="#" class="text-orange fs24 font-weight-bold">413-76-37</a>
-                </div>
-                <div class="header-city p-0 m-0">
-                    <span class="text-dark fs18">по Новгороду и области</span>
-                </div>
+            <div class="phone d-flex flex-column align-items-end lh1">
+                <a href="tel:413-76-37" class="text-orange fs24 font-weight-bold d-flex align-items-center"><img src="img/phone-icon.svg" alt="" class="mx-1">413-76-37</a>
+                <p class="mb-0 fs18">по Новгороду и области</p>
             </div>
         </div>
     </header>
@@ -43,26 +47,23 @@
         <div class="container">
             <div class="gt-title">
                 <h2 class="text-white fs36 font-weight-bold">Трезвый <span class="text-orange">водитель</span></h2>
-                <h3 class="text-white fs16 font-weight-normal mt-2">Мы пришлем Вам опытного водителя, который доставит
-                    <br>Вас и ваше авто домой после дружеской встречи в баре или праздничного застолья!</h3>
+                <p class="text-white fs16 font-weight-normal lh1 mt-2">Мы пришлем Вам опытного водителя, который доставит
+                    <br>Вас и ваше авто домой после дружеской встречи в баре или праздничного застолья!</p>
             </div>
-            <div class="sober-content d-flex justify-content-between align-items-center">
+            <div class="sober-content d-flex justify-content-between">
                 <div class="sober-left">
                     <div class="gt-rate">
                         <div class="gt-rate-block d-flex justify-content-center align-items-center">
                             <div class="gt-rate-tabs">
-                                <div class="rate-tabs m-0 bg-white">
-                                    <h3 class="rate-title text-dark text-center fs24 pt-3">Трезвый водитель</h3>
-                                    <h3 class="rate-subtitle text-dark text-center fs18 font-weight-normal mt-2">Заберём из любой точки</h3>
-                                    <div class="rate-small-price">
-                                        <h3 class="text-dark text-center fs18 pt-5 font-weight-normal">500р подача</h3>
-                                        <h3 class="text-dark text-center fs18 my-2 font-weight-normal">90р километр</h3>
-                                        <h3 class="text-dark text-center fs18 my-2  pb-3 font-weight-normal">90р минута пути</h3>
-                                    </div>
-                                    <div class="rate-title-price">
-                                        <h3 class="text-dark text-center fs36 mt-4"> от 500Р </h3>
-                                    </div>
-                                </div>>
+                                <div class="rate-tabs bg-white">
+                                    <h3 class="rate-title text-dark text-center fs24 pt-4">Трезвый водитель</h3>
+                                    <p class="rate-subtitle text-dark text-center fs18 font-weight-normal mt-2 pb-2">Заберем из любой точки</p>
+                                    <p class="text-dark text-center fs18 mb-0 mt-4">500р посадка</p>
+                                    <p class="text-dark text-center fs18 mb-0">90р километр</p>
+                                    <p class="text-dark text-center fs18 mb-4">90р минута пути</p>
+                                    <hr class="mx-2">
+                                    <p class="text-dark text-center fs36 font-weight-bold"> от 500Р </p>
+                                </div>
                             </div>
                         </div>
                     </div>
@@ -125,9 +126,9 @@
                     </ul>
                 </div>
                 <div class="footer-social mt-3">
-                    <img src="img/dest/footer-icon-vk.png" alt="">
-                    <img src="img/dest/footer-icon-inst.png" alt="">
-                    <img src="img/dest/footer-icon-fb.png" alt="">
+                    <img src="img/vk-footer-icon.svg" alt="">
+                    <img src="img/inst-footer-icon.svg" alt="">
+                    <img src="img/fb-footer-icon.svg" alt="">
                 </div>
             </div>
             <div class="footer-copyright d-flex justify-content-between align-items-center">

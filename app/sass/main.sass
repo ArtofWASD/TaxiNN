@@ -34,6 +34,8 @@
   font-size: 48px
 .lh1
   line-height: 1.1
+.bg-light
+  backgound-color: #E5E5E5!important
 //Главная страница
 body
   ul
@@ -82,12 +84,19 @@ header
         color: #000000
       &:hover
         color: $accent!important
-    .links-uslugi
-      position: relative
+    .links-topmenu
       &:hover
-        display: inline
-      .links-submenu
-        position: absolute
+        .links-submenu
+          display: block !important
+          margin-top: -10px
+          padding-top: -10px
+          top: 90%
+          left: 0
+          li
+            a
+              white-space: nowrap
+              text-decoration: none
+              color: #000000
 
 
 
@@ -123,8 +132,8 @@ header
       &:nth-child(7)
         padding: 25px 18px 0 0
   .up-button-text
-    margin-top: 96px
     width: 450px
+    margin-top: 96px
   .btn-orange
     width: 400px
     height: 80px
@@ -132,7 +141,6 @@ header
     font-size: 24px
     color: white
     font-weight: bold
-    margin-bottom: 44px
 
 //Страница Контакты
 .contacts
@@ -222,7 +230,6 @@ header
   background-repeat: no-repeat
   .sober-right
     background-color: white
-    height: 330px
     .zakaz-taxi-form
       width: 320px
       height: 84px
@@ -234,26 +241,9 @@ header
     height: 84px
 // Услуги
 .uslugi
-  .tabs
-    .uslugi-tabs-1
-      background-image: url("../img/dest/uslugi-tabs-guest.png")
-      padding: 0 30px
-    .uslugi-tabs-2
-      background-image: url("../img/dest/uslugi-tabs-nn.png")
-      padding: 0 30px
-    .uslugi-tabs-3
-      background-image: url("../img/dest/uslugi-tabs-rus.png")
-      padding: 0 30px
-    .uslugi-tabs-4
-      background-image: url("../img/dest/uslugi-tabs-sober.png")
-      padding: 0 30px
-    .tabs-title
-      padding-top: 46px
-    .tabs-text
-      margin-top: 38px
-      border-top: 0.5px white solid
-      padding: 20px 0
-
+  .uslugi-item
+    background-size: cover
+    background-position: center
 //заказ
 .zakaz-taxi
   .zakaz-taxi-form
@@ -284,25 +274,11 @@ header
 //Тарифы
 .rate
   background-image: url("../img/dest/rate-background.png")
-  background-position: center
-  background-repeat: no-repeat
+  background-size: cover
   .rate-block
     .rate-tabs-section
-      margin-top: 40px
-      .rate-tabs
-        width: 265px
-        height: 330px
-        padding: 0 8px
-        .rate-title
-          padding-top: 39px
-        .rate-small-price
-          padding-top: 15px
-        .rate-title-price
-          padding-top: 20px
-          border-top: 1px #000000 solid
       .rate-button
         .btn-orange
-          margin-top: 30px
           width: 265px
           height: 84px
 
