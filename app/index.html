@@ -15,29 +15,31 @@
 <div class="page">
 	<!-- Шапка. Начало. -->
 	<header>
-		<div class="container d-flex justify-content-between align-items-center">
-			<!-- Логотип -->
-			<div class="img-box">
-				<img class="logo img-fluid" src="img/dest/logo.png" alt="Огни Нижнего">
-			</div>
-			<!-- Ссылки(ПК) -->
-			<ul class="links list-unstyled d-flex">
-				<li><a href="#" class="text-dark p-2 p-xl-3 fs18">Главная</a></li>
-				<li class="links-topmenu position-relative">
-					<a href="#" class="text-dark p-2 p-xl-3 fs18">Услуги</a>
-					<ul class="links-submenu list-unstyled mt-3 d-none position-absolute bg-white border p-3">
-						<li><a href="#">Такси для гостей города</a></li>
-						<li><a href="#">Такси области и РФ</a></li>
-						<li><a href="#">Такси для нижегородцев</a></li>
-						<li><a href="#">Трезвый водитель</a></li>
-					</ul>
-				</li>
-				<li><a href="#" class="text-dark p-2 p-xl-3 fs18">Контакты</a></li>
-			</ul>
-			<!-- Телефон -->
-			<div class="phone d-flex flex-column align-items-end lh1">
+		<div class="container">
+			<div class="row d-flex justify-content-between align-items-center">
+				<!-- Логотип -->
+				<div class="img-box col-6 col-md-4">
+					<img class="logo img-fluid" src="img/dest/logo.png" alt="Огни Нижнего">
+				</div>
+				<!-- Ссылки(ПК) -->
+				<ul class="links list-unstyled d-none d-md-flex col-md-4">
+					<li><a href="#" class="text-dark p-2 p-xl-3 fs18">Главная</a></li>
+					<li class="links-topmenu position-relative">
+						<a href="#" class="text-dark p-2 p-xl-3 fs18">Услуги</a>
+						<ul class="links-submenu list-unstyled mt-3 d-none position-absolute bg-white border p-3">
+							<li><a href="#">Такси для гостей города</a></li>
+							<li><a href="#">Такси области и РФ</a></li>
+							<li><a href="#">Такси для нижегородцев</a></li>
+							<li><a href="#">Трезвый водитель</a></li>
+						</ul>
+					</li>
+					<li><a href="#" class="text-dark p-2 p-xl-3 fs18">Контакты</a></li>
+				</ul>
+				<!-- Телефон -->
+				<div class="phone d-flex flex-column align-items-end lh1 col-6 col-md-4">
 					<a href="tel:413-76-37" class="text-orange fs24 font-weight-bold d-flex align-items-center"><img src="img/phone-icon.svg" alt="" class="mx-1">413-76-37</a>
-					<p class="mb-0 fs18">по Новгороду и области</p>
+					<p class="mb-0 fs18 text-right">по Новгороду и области</p>
+				</div>
 			</div>
 		</div>
 	</header>
@@ -45,20 +47,20 @@
 	<!-- Баннер. Начало. -->
 	<section class="banner py-5 bg-light">
         <div class="container">
-            <div class=" row justify-content-between align-items-center">
+            <div class="row justify-content-center align-items-center">
 				<!-- Заказать такси -->
-                <div class="left-side col-lg-6">
-					<div class="right-side-text">
-						<h2 class="text-dark fs48 ">Двигайся <span class="text-orange fs48">с комфортом</span></h2>
-						<h3 class="tex-dark fs24">Машины Премиум класса по цене Эконом</h3>
+                <div class="left-side d-flex flex-column d-md-flex col-12 col-md-6">
+					<div class="right-side-text col-12 pb-5">
+						<h2 class="text-dark fs48 wsn">Двигайся <span class="text-orange fs48">с комфортом</span></h2>
+						<p class="tex-dark fs24 font-weight-bold lh1">Машины Премиум класса по цене Эконом</p>
 					</div>
-					<div class="button-section">
+					<div class="button-section col-12 pt-4">
 						<p class="up-button-text text-dark fs18 font-weight-normal">Таким образом рамки и место обучения кадров способствует подготовки и реализации позиций, занимаемых участниками в отношении поставленных задач.</p>
-						<button class="btn btn-orange mt-4">Заказать такси сейчас</button>
+						<button class="btn btn-orange mt-4 col-12 col-sm-9">Заказать такси сейчас</button>
 					</div>
                 </div>
 				<!-- Услуги -->
-                <div class="right-side text-right justify-content-end align-items-center col-lg-6" >
+                <div class="right-side text-right justify-content-end align-items-center col-12 col-md-6" >
 					<div class="right-side-element align-items-center">
 						<h4 class="text-white fs18">Предварительный заказ <img src="img/phone-icon-white.svg" alt=""></h4>
 					</div>
@@ -86,7 +88,7 @@
 	</section>
 	<!-- Баннер. конец. -->
 	<!-- Наши услуги. Начало. -->
-	<section class="uslugi py-5">
+	<section class="uslugi py-5 d-none">
 		<div class="container">
 			<div class="uslugi-title">
 				<h2 class="text-dark fs48 font-weight-bold ">Наши<span class="text-orange fs48"> услуги</span></h2>
@@ -125,7 +127,7 @@
 	</section>
 	<!-- Наши услуги. конец. -->
 	<!-- Заказжи такси. Начало. -->
-	<section class="zakaz-taxi py-5 bg-light">
+	<section class="zakaz-taxi py-5 bg-light d-none">
 		<div class="container">
 			<div class="zakaz-taxi-title">
 				<h3 class="text-left fs24 font-weight-bold">Закажи такси прямо сейчас</h3>
@@ -151,7 +153,7 @@
 	</section>
 	<!-- Заказжи такси. конец. -->
 	<!-- Почему мы. Начало. -->
-	<section class="why-us py-5">
+	<section class="why-us py-5 d-none">
 		<div class="container">
 			<div class="why-us-title">
 				<h2 class="fs48 font-weight-bold">Почему <span class="text-orange fs48 font-weight-bold">мы?</span></h2>
@@ -186,7 +188,7 @@
 	</section>
 	<!-- Почему мы. Конец. -->
 	<!-- Наши тарифы. Начало. -->
-	<section class="rate py-5">
+	<section class="rate py-5 d-none">
 		<div class="container">
 			<div class="rate-title">
 				<h2 class="text-white fs48 font-weight-bold">Наши <span class="text-orange fs48 font-weight-bold">тарифы</span></h2>
@@ -255,7 +257,7 @@
 	</section>
 	<!-- Наши тарифы. Конец. -->
 	<!-- Первые в Нижнем. Начало. -->
-	<section class="first py-5 bg-light">
+	<section class="first py-5 bg-light d-none">
 		<div class="container">
 			<div class="first-title">
 				<h2 class="text-dark fs48 font-weight-bold">Первые <span class="text-orange fs48 font-weight-bold">в Нижнем</span></h2>
@@ -273,7 +275,7 @@
 	</section>
 	<!-- Первые в Нижнем. Конец. -->
 	<!-- Заказжи такси. Начало. -->
-	<section class="zakaz-taxi py-5 bg-light">
+	<section class="zakaz-taxi py-5 bg-light d-none">
 		<div class="container">
 			<div class="zakaz-taxi-title">
 				<h3 class="text-left fs24 font-weight-bold">Закажи такси прямо сейчас</h3>
@@ -299,7 +301,7 @@
 	</section>
 	<!-- Заказжи такси. конец. -->
 	<!-- Не только такси. Начало -->
-	<section class="not-taxi py5">
+	<section class="not-taxi py5 d-none">
 		<div class="container">
 			<div class="not-taxi-title">
 				<h2 class="text-dark fs48 font-weight-bold">Мы - <span class="text-orange fs48 font-weight-bold">не только такси</span></h2>
@@ -317,7 +319,7 @@
 	</section>
 	<!-- Не только такси. Конец -->
 	<!-- Связаться с нами. Начало -->
-	<section class="contact-us ">
+	<section class="contact-us d-none">
 		<div class="container">
 			<div class="contact-title py-5">
 				<h2 class="text-dark fs48 font-weight-bold">Связаться<span class="text-orange fs48 font-weight-bold"> с нами</span></h2>
@@ -348,38 +350,39 @@
 	<!-- Подвал. Начало. -->
 	<footer>
 		<div class="container">
-			<div class="footer-info d-flex justify-content-between">
-				<div class="footer-logo">
+			<div class="row footer-info d-flex justify-content-between">
+				<div class="footer-logo d-flex col-12 col-md-6 col-lg-3 justify-content-center align-items-center order-lg-0">
 					<img class="logo mt-0 img-fluid" src="img/dest/logo.png" alt="Огни Нижнего">
 				</div>
-				<div class="footer-contact mt-3 d-inline">
+				<div class="footer-contact mt-md-3 d-md-inline d-flex flex-column col-12 col-md-6 col-lg-3 justify-content-center align-items-center lh1 py-3 py-lg-0 order-1 order-lg-0" >
 					<div class="footer-contact-links">
-						<a href="#" class="text-orange fs24 font-weight-bold">413-76-37</a>
+						<a href="#" class="text-orange fs24 font-weight-bold ml-2">413-76-37</a>
 					</div>
 					<div class="footer-contact-links">
-						<a href="#" class="text-orange fs24 font-weight-bold">example@gmail.com</a>
+						<a href="#" class="text-orange fs24 font-weight-bold ml-2">example@gmail.com</a>
 					</div>
 				</div>
-				<div class="div footer-links mt-3">
-					<ul class="list-unstyled">
-						<li><a href="" class="text-white fs18 font-weight-bold">Услуги</a></li>
-						<ul class="list-unstyled">
-							<li><a href="#" class="text-white fs18 font-weight-normal">Такси для гостей города</a></li>
-							<li><a href="#" class="text-white fs18 font-weight-normal">Такси для Нижегородцев</a></li>
-							<li><a href="#" class="text-white fs18 font-weight-normal">Такси по области и РФ</a></li>
-							<li><a href="#" class="text-white fs18 font-weight-normal">Трезсвый водитель</a></li>
-						</ul>
+				<div class="footer-links mt-3 d-flex col-12 col-md-6 col-lg-3 justify-content-center order-lg-0 py-3 py-lg-0">
+					<ul class="list-unstyled  d-flex flex-column align-items-center align-items-md-start">
+						<li class="d-flex flex-column align-items-center align-items-md-start"><a href="" class="text-white fs18 font-weight-bold">Услуги</a>
+							<ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start">
+								<li><a href="#" class="text-white fs18 font-weight-normal">Такси для гостей города</a></li>
+								<li><a href="#" class="text-white fs18 font-weight-normal">Такси для Нижегородцев</a></li>
+								<li><a href="#" class="text-white fs18 font-weight-normal">Такси по области и РФ</a></li>
+								<li><a href="#" class="text-white fs18 font-weight-normal">Трезсвый водитель</a></li>
+							</ul>
+						</li>
 					</ul>
 				</div>
-				<div class="footer-social mt-3">
+				<div class="footer-social mt-md-3 d-flex col-12 col-md-6 col-lg-3 align-self-start justify-content-center order-1 py-3 py-lg-0 order-lg-0">
                     <img src="img/vk-footer-icon.svg" alt="">
                     <img src="img/inst-footer-icon.svg" alt="">
                     <img src="img/fb-footer-icon.svg" alt="">
 				</div>
 			</div>
 			<div class="footer-copyright d-flex justify-content-between align-items-center">
-                <h3 class="text-white fs18 font-weight-normal my-3">2020|Все права защищены</h3>
-                <h3 class="text-white fs18 font-weight-normal my-3"><a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a></h3>
+                <p class="text-white fs18 font-weight-normal my-3">2020|Все права защищены</p>
+                <p class="text-white fs18 font-weight-normal my-3"><a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a></p>
 			</div>
 		</div>
 	</footer>

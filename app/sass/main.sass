@@ -36,6 +36,8 @@
   line-height: 1.1
 .bg-light
   backgound-color: #E5E5E5!important
+.wsn
+  white-space: nowrap
 //Главная страница
 body
   ul
@@ -109,7 +111,7 @@ header
     background-position: center
     background-repeat: no-repeat
     height: 412px
-    width: 550px
+    width: 100%
     img
       margin-left: 23px
       width: 26px!important
@@ -129,10 +131,10 @@ header
       &:nth-child(7)
         padding: 25px 18px 0 0
   .up-button-text
-    width: 450px
-    margin-top: 96px
+    width: 100%
+    //margin-top: 96px
   .btn-orange
-    width: 400px
+    width: 100%
     height: 80px
     background-color: #F69B33
     font-size: 24px
@@ -326,4 +328,38 @@ footer
       background-color: white
       width: 238px
       height: 132px
+
+
+// медиа запросы
+@media (max-width: 1199.98px)
+  .right-side-text
+    h2, span
+      font-size: 36px
+  .footer-info
+    .footer-links
+      a
+        font-size: 16px
+
+@media (max-width: 991.98px)
+  .left-side
+    h2, span
+      font-size: 30px
+    .up-button-text
+      margin-top: 50px
+    .btn-orange
+      font-size: 18px
+
+//@media (max-width: 767.98px)
+
+@media (max-width: 575.98px)
+  .footer-copyright
+    p
+      font-size: 11px
+      white-space: nowrap
+
+@media (max-width: 359.98px)
+  .footer-copyright
+    p
+      font-size: 8px
+      white-space: nowrap
 
