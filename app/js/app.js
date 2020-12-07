@@ -1,5 +1,6 @@
 //import $ from 'jquery' // import module example (npm i -D jquery)
 import $ from '../libs/mmenu-light-master/dist/mmenu-light'
+//import $ from '../libs/bootstrap-4.5.2-dist/js/bootstrap.bundle'
 
 document.addEventListener('DOMContentLoaded', () => {
 
