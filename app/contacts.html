@@ -15,48 +15,53 @@
 <div class="page">
     <!-- Шапка. Начало. -->
     <header>
-        <div class="container d-flex justify-content-between align-items-center">
-            <!-- Логотип -->
-            <div class="img-box">
-                <img class="logo img-fluid" src="img/dest/logo.png" alt="Огни Нижнего">
-            </div>
-            <!-- Ссылки(ПК) -->
-            <ul class="links list-unstyled d-flex">
-                <li><a href="#" class="text-dark p-2 p-xl-3 fs18">Главная</a></li>
-                <li class="links-topmenu position-relative">
-                    <a href="#" class="text-dark p-2 p-xl-3 fs18">Услуги</a>
-                    <ul class="links-submenu list-unstyled mt-3 d-none position-absolute bg-white border p-3">
-                        <li><a href="#">Такси для гостей города</a></li>
-                        <li><a href="#">Такси области и РФ</a></li>
-                        <li><a href="#">Такси для нижегородцев</a></li>
-                        <li><a href="#">Трезвый водитель</a></li>
-                    </ul>
-                </li>
-                <li><a href="#" class="text-dark p-2 p-xl-3 fs18">Контакты</a></li>
-            </ul>
-            <!-- Телефон -->
-            <div class="phone d-flex flex-column align-items-end lh1">
-                <a href="tel:413-76-37" class="text-orange fs24 font-weight-bold d-flex align-items-center"><img src="img/phone-icon.svg" alt="" class="mx-1">413-76-37</a>
-                <p class="mb-0 fs18">по Новгороду и области</p>
+        <div class="container">
+            <div class="row d-flex justify-content-between align-items-center">
+                <!-- Логотип -->
+                <div class="img-box col-4">
+                    <img class="logo img-fluid" src="img/dest/logo.png" alt="Огни Нижнего">
+                </div>
+                <!-- Ссылки(ПК) -->
+                <ul class="links list-unstyled d-none d-lg-flex">
+                    <li><a href="#" class="text-dark p-2 p-xl-3 fs18">Главная</a></li>
+                    <li class="links-topmenu position-relative">
+                        <a href="#" class="text-dark p-2 p-xl-3 fs18">Услуги</a>
+                        <ul class="links-submenu list-unstyled mt-3 d-none position-absolute bg-white border p-3">
+                            <li><a href="#">Такси для гостей города</a></li>
+                            <li><a href="#">Такси по области и РФ</a></li>
+                            <li><a href="#">Такси для нижегородцев</a></li>
+                            <li><a href="#">Трезвый водитель</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#" class="text-dark p-2 p-xl-3 fs18">Контакты</a></li>
+                </ul>
+                <!-- Телефон -->
+                <div class="phone d-flex flex-column align-items-center align-items-lg-end col-4">
+                    <a href="tel:413-76-37" class="text-orange fs24 font-weight-bold d-flex align-items-center"><img src="img/phone-icon.svg" alt="" class="mx-1">413-76-37</a>
+                    <p class="mb-0 fs18 text-center text-lg-right">по Новгороду и области</p>
+                </div>
+                <div class="mobile col-4">
+                    <a href="#my-menu" class="d-flex d-lg-none justify-content-end"><img src="img/burger-icon.svg" alt=""></a>
+                </div>
             </div>
         </div>
     </header>
     <!-- Шапка. Конец. -->
     <section class="contacts py-5">
         <div class="container">
-            <div class="contacts-content d-flex ">
-                <div class="contacts-left">
-                    <div class="cont-email">
-                        <div class="cont-email-element d-flex align-items-center  px-5 pt-5 pb-4">
-                            <div class="cont-img mr-3 d-flex align-items-center">
+            <div class="contacts-content row d-flex justify-content-center align-items-center">
+                <div class="contacts-left col-12 col-lg-5">
+                    <div class="cont-email py-4">
+                        <div class="cont-email-element d-flex justify-content-lg-start align-items-center px-3 px-lg-5 py-2">
+                            <div class="cont-img mr-2 d-flex align-items-center">
                                 <img src="./img/phone-icon-white.svg" alt="" class="mx-auto">
                             </div>
                             <div>
                                 <a href="" class="text-dark fs18 font-weight-normal">Телефон: <span class="fs18 font-weight-bold">+7(911) 123-45-67</span></a>
                             </div>
                         </div>
-                        <div class="cont-email-element d-flex px-5 align-items-center">
-                            <div class="cont-img mr-3 d-flex align-items-center">
+                        <div class="cont-email-element d-flex justify-content-lg-start align-items-center px-3 px-lg-5 py-2">
+                            <div class="cont-img mr-2 d-flex align-items-center">
                                 <img src="./img/email-white-icon.svg" alt="" class="mx-auto">
                             </div>
                             <div>
@@ -64,25 +69,25 @@
                             </div>
                         </div>
                     </div>
-                    <div class="cont-map mt-4">
-                        <img src="img/dest/contact-map.png" alt="">
+                    <div class="cont-map d-flex justify-content-center mt-3">
+                        <img src="img/dest/contact-map.png" alt="" class="img-fluid w-100" >
                     </div>
                 </div>
-                <div class="contacts-right">
-                    <div class="cont-form-title mt-4">
-                        <h3 class="text-white text-left fs24 font-weight-bold">Мы ответим на все ваши вопросы!</h3>
-                        <div class="cont-form-fields d-inline justify-content-center align-items-center">
-                            <div class="cont-name-tel d-flex mt-4">
-                                <input type="text" class="nt-input mr-3" placeholder="Ваше имя">
-                                <input type="text" class="nt-input" placeholder="+7(911) 123-45-65">
+                <div class="contacts-right mt-4 mt-lg-0 col-12 col-lg-7">
+                    <div class="cont-form-title mt-3">
+                        <h3 class="text-white text-left fs24 font-weight-bold text-center text-lg-left">Мы ответим на все ваши вопросы!</h3>
+                        <div class="cont-form-fields">
+                            <div class="cont-name-tel d-inline d-lg-flex  justify-content-between justify-content-lg-start mt-4">
+                                <input type="text" class="nt-input py-4 col-12 col-lg-5 mr-3 mt-3 mt-lg-0" placeholder="Ваше имя">
+                                <input type="text" class="nt-input py-4 col-12 col-lg-5 mt-3 mt-lg-0" placeholder="+7(911) 123-45-65">
                             </div>
                             <div class="cont-comment d-flex mt-3">
-                                <textarea name="" id="" cols="79" rows="5" placeholder="Ваш вопрос"></textarea>
+                                <textarea name="" id="" cols="70" rows="4" placeholder="Ваш вопрос"></textarea>
                             </div>
-                            <div class="cont-button d-flex justify-content-between mt-3">
-                                <h4 class="contact-button-policity fs13 text-white font-weight-normal">«Нажимая на кнопку, вы даете согласие на
+                            <div class="cont-button d-flex flex-wrap justify-content-between mt-3 mt-xl-2">
+                                <h4 class="contact-button-policity fs13 text-white text-center text-lg-left font-weight-normal">«Нажимая на кнопку, вы даете согласие на
                                     <br> обработку персональных данных и <br> соглашаетесь c политикой конфиденциальности»</h4>
-                                <button class="btn btn-orange fs24 text-white font-weight-bold">Отправить</button>
+                                <button class="btn btn-orange fs24 text-white font-weight-bold col-12 col-md-5 my-2 py-3 py-xl-4 w-100 mt-3 mt-lg-0">Отправить</button>
                             </div>
                         </div>
                     </div>
@@ -93,43 +98,60 @@
     <!-- Подвал. Начало. -->
     <footer>
         <div class="container">
-            <div class="footer-info d-flex justify-content-between">
-                <div class="footer-logo">
+            <div class="row footer-info d-flex justify-content-between">
+                <div class="footer-logo d-flex col-12 col-md-6 col-lg-3 justify-content-center align-items-center order-lg-0">
                     <img class="logo mt-0 img-fluid" src="img/dest/logo.png" alt="Огни Нижнего">
                 </div>
-                <div class="footer-contact mt-3 d-inline">
+                <div class="footer-contact mt-md-3 d-md-inline d-flex flex-column col-12 col-md-6 col-lg-3 justify-content-center align-items-center  py-3 py-lg-0 order-1 order-lg-0" >
                     <div class="footer-contact-links">
-                        <a href="#" class="text-orange fs24 font-weight-bold">413-76-37</a>
+                        <a href="#" class="text-orange fs24 font-weight-bold ml-2">413-76-37</a>
                     </div>
                     <div class="footer-contact-links">
-                        <a href="#" class="text-orange fs24 font-weight-bold">example@gmail.com</a>
+                        <a href="#" class="text-orange fs24 font-weight-bold ml-2">example@gmail.com</a>
                     </div>
                 </div>
-                <div class="div footer-links mt-3">
-                    <ul class="list-unstyled">
-                        <li><a href="" class="text-white fs18 font-weight-bold">Услуги</a></li>
-                        <ul class="list-unstyled">
-                            <li><a href="#" class="text-white fs18 font-weight-normal">Такси для гостей города</a></li>
-                            <li><a href="#" class="text-white fs18 font-weight-normal">Такси для Нижегородцев</a></li>
-                            <li><a href="#" class="text-white fs18 font-weight-normal">Такси по области и РФ</a></li>
-                            <li><a href="#" class="text-white fs18 font-weight-normal">Трезсвый водитель</a></li>
-                        </ul>
+                <div class="footer-links mt-3 d-flex col-12 col-md-6 col-lg-3 justify-content-center order-lg-0 py-3 py-lg-0">
+                    <ul class="list-unstyled  d-flex flex-column align-items-center align-items-md-start">
+                        <li class="d-flex flex-column align-items-center align-items-md-start"><a href="" class="text-white fs18 font-weight-bold">Услуги</a>
+                            <ul class="list-unstyled d-flex flex-column align-items-center align-items-md-start">
+                                <li><a href="#" class="text-white fs18 font-weight-normal">Такси для гостей города</a></li>
+                                <li><a href="#" class="text-white fs18 font-weight-normal">Такси для Нижегородцев</a></li>
+                                <li><a href="#" class="text-white fs18 font-weight-normal">Такси по области и РФ</a></li>
+                                <li><a href="#" class="text-white fs18 font-weight-normal">Трезсвый водитель</a></li>
+                            </ul>
+                        </li>
                     </ul>
                 </div>
-                <div class="footer-social mt-3">
+                <div class="footer-social mt-md-3 d-flex col-12 col-md-6 col-lg-3 align-self-start justify-content-center order-1 py-3 py-lg-0 order-lg-0">
                     <img src="img/vk-footer-icon.svg" alt="">
                     <img src="img/inst-footer-icon.svg" alt="">
                     <img src="img/fb-footer-icon.svg" alt="">
                 </div>
             </div>
             <div class="footer-copyright d-flex justify-content-between align-items-center">
-                <h3 class="text-white fs18 font-weight-normal my-3">2020|Все права защищены</h3>
-                <h3 class="text-white fs18 font-weight-normal my-3"><a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a></h3>
+                <p class="text-white fs18 font-weight-normal my-3">2020|Все права защищены</p>
+                <p class="text-white fs18 font-weight-normal my-3"><a href="#" class="text-white text-decoration-none">Политика конфиденциальности</a></p>
             </div>
         </div>
     </footer>
     <!-- Подвал. Конец. -->
 </div>
+<!--Мобильная навигация. Начало-->
+<nav id="my-menu">
+    <ul>
+        <li><a href="#">Главная</a></li>
+        <li><a href="#">Услуги</a>
+            <ul>
+                <li><a href="#">Такси для гостей города</a></li>
+                <li><a href="#">Такси по области и РФ</a></li>
+                <li><a href="#">Такси для нижегородцев</a></li>
+                <li><a href="#">Трезвый водитель</a></li>
+            </ul>
+        </li>
+        <li><a href="#">Контакты</a></li>
+    </ul>
+</nav>
+<!--Мобильная навигация. Конец-->
 <script src="js/app.min.js"></script>
 </body>
 </html>
