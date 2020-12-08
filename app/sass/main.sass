@@ -290,25 +290,57 @@ footer
 
  .fs48
    font-size: 32px
- .first-content-photo
-   .bg
-     .bg-vertical
-      background-image: url("../img/dest/first-content-img.png")
-      background-size: cover
-      background-position: center
-      background-repeat: no-repeat
-      height: 269px
-      width: 100%
- .not-taxi-photo
-   .bg
-     .bg-vertical
-       background-image: url("../img/dest/not-taxi-img.png")
-       background-size: cover
-       background-position: center
-       background-repeat: no-repeat
-       height: 269px
-       width: 100%
+ .first
+    overflow: hidden
+    position: relative
+    background-image: url("../img/dest/first-content-img.png")
+    background-size: cover
+    background-position: center
+    background-repeat: no-repeat
+    &::after
+      content: ''
+      position: absolute
+      top: 0
+      left: 0
+      right: 0
+      bottom: 0
+      background: rgba(0,0,0,.7)
+    .container
+      position: relative
+      z-index: 1
+    .first-content
+      .first-content-text
+        background-color: transparent!important
+        &::before
+          display: none
+        p
+          color: white!important
 
+ .not-taxi
+   overflow: hidden
+   position: relative
+   background-image: url("../img/dest/not-taxi-img.png")
+   background-size: cover
+   background-position: center
+   background-repeat: no-repeat
+   &::after
+     content: ''
+     position: absolute
+     top: 0
+     left: 0
+     right: 0
+     bottom: 0
+     background: rgba(0,0,0,.7)
+   .container
+     position: relative
+     z-index: 1
+   .not-taxi-content
+     .not-taxi-text
+       background-color: transparent!important
+       &::before
+         display: none
+       p
+         color: white!important
 
 //@media (max-width: 767.98px)
 
